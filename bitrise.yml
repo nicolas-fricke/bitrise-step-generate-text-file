@@ -1,5 +1,5 @@
 format_version: 0.0.1
-default_step_lib_source: https://github.com/nicolas-fricke/bitrise-step-generate-text-file
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib
 
 workflows:
   test:
@@ -24,7 +24,8 @@ workflows:
           file if you would not specify another value.
         run_if: true
         inputs:
-        - example_step_input: Example Step Input's value
+        - file_name: my_generated_text_file.txt
+        - file_content: Today is `date` and your PATH is ${PATH}
 
 
   # ----------------------------------------------------------------
