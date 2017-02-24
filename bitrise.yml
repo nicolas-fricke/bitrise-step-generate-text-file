@@ -25,7 +25,7 @@ workflows:
         run_if: true
         inputs:
         - file_name: my_generated_text_file.txt
-        - file_content: Today is `date` and your PATH is ${PATH}
+        - file_content: "Today is `date` and your PATH is ${PATH}"
 
 
   # ----------------------------------------------------------------
